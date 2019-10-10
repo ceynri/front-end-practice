@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            /* 取消浏览器自带的边距 */
+            margin: 0;
+            padding: 0;
+            /* 使body尺寸等于浏览器窗口尺寸 */
+            width: 100%;
+            height: 100vh;
+            /* flex水平垂直居中法 */
+            display: flex;
+            /* 垂直居中 */
+            align-items: center;
+            /* 水平居中 */
+            justify-content: center;
+        }
+
+        .bubble {
+            /* 气泡尺寸 */
+            width: 24px;
+            height: 24px;
+            /* 圆形效果 */
+            border-radius: 100%;
+            /* 横向排列 */
+            display: inline-block;
+            /* 应用slide动画（后面定义的keyframes），1s时间周期，无限循环 */
+            animation: slide 1s infinite;
+        }
+
+        .bubble:nth-child(1) {
+            background: #32aacc;
+        }
+
+        .bubble:nth-child(2) {
+            animation-delay: .1s;
+            background: #64aacc;
+        }
+
+        .bubble:nth-child(3) {
+            animation-delay: .2s;
+            background: #96aacc;
+        }
+
+        .bubble:nth-child(4) {
+            animation-delay: .3s;
+            background: #c8aacc;
+        }
+
+        .bubble:nth-child(5) {
+            animation-delay: .4s;
+            background: #faaacc;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                /* 尺寸放大的同时透明度降低 */
+                opacity: .3;
+                transform: scale(2);
+            }
+
+            100% {
+                /* 虽然不写也可能能够运行，但为了兼容性最好都写上0%与100% */
+                transform: scale(1);
+            }
+        }
+
+        /* 以下是旧版浏览器兼容支持 */
+
+        @-moz-keyframes slide {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.3;
+                transform: scale(2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @-webkit-keyframes slide {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.3;
+                transform: scale(2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @-o-keyframes slide {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.3;
+                transform: scale(2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+</body>
+
+</html>
