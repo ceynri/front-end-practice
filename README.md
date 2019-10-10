@@ -13,7 +13,8 @@
 - Loader
   - 浮动气泡加载动画
     - [源码📃](./loader/bubbles-loader.html)
-
+  - 彩虹旋转加载动画
+    - [源码📃](./loader/rainbow-loader.html)
 
 <br/>
 
@@ -23,3 +24,4 @@
 - [图片3D分层悬浮效果](https://www.bilibili.com/video/av45405765)
 - [Loader]
   - [浮动气泡加载动画](https://codepen.io/CKH4/pen/ZGNyep/)
+  - [彩虹旋转加载动画](https://codepen.io/jackrugile/pen/JddmaX/)
