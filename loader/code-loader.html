@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Code Loader</title>
+    <style>
+        body {
+            font-family: Consolas, monaco, monospace;
+            background-color: #232427;
+            color: #FF893A;
+        }
+
+        .loader {
+            width: 300px;
+            line-height: 100px;
+            /* 水平垂直居中 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: -50px;
+            /* 文字居中 */
+            text-align: center;
+            font-size: 38px;
+            /* 减小字母之间的空隙 */
+            letter-spacing: -6px;
+        }
+
+        /* 三个点 */
+        .dots span {
+            font-size: 150%;
+            display: inline-block;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .dot-1 {
+            animation: dot_1 1s ease-in-out infinite;
+            /* 动画运行完后反向运行动画至起点 */
+            /* 是一个较新的属性 */
+            animation-direction: alternate;
+            animation-delay: .5s;
+        }
+
+        .dot-2 {
+            animation: dot_2 1s ease-in-out infinite;
+            animation-direction: alternate;
+            animation-delay: 1.5s;
+        }
+
+        .dot-3 {
+            animation: dot_3 1s ease-in-out infinite;
+            animation-direction: alternate;
+            animation-delay: 1s;
+        }
+
+        @keyframes dot_1 {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            50% {
+                top: 30px;
+                left: 20px;
+            }
+
+            100% {
+                top: 0px;
+                left: 40px;
+            }
+        }
+
+        @keyframes dot_2 {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            50% {
+                top: -30px;
+                left: 20px;
+            }
+
+            100% {
+                top: 0px;
+                left: 40px;
+            }
+        }
+
+        @keyframes dot_3 {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            50% {
+                top: -30px;
+                left: -40px;
+            }
+
+            100% {
+                top: 0px;
+                left: -80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class='loader'>
+        <div class='chars'>
+            <span class='char brace'>{</span>
+            <span class='dots'>
+                <span class='char dot-1'>.</span>
+                <span class='char dot-2'>.</span>
+                <span class='char dot-3'>.</span>
+            </span>
+            <span class='char brace'>}</span>
+        </div>
+    </section>
+</body>
+
+</html>
