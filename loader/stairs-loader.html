@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stairs Loader</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            background: #EA4961;
+            /* flex居中法 */
+            display: flex;
+            /* 垂直居中 */
+            align-items: center;
+            /* 水平居中 */
+            justify-content: center;
+        }
+
+        .loader {
+            position: relative;
+            width: 70px;
+            height: 50px;
+        }
+
+        .loader p {
+            position: absolute;
+            top: 100%;
+            /* 水平居中 */
+            left: 50%;
+            transform: translateX(-50%);
+            text-transform: uppercase;
+            font-size: 12px;
+            color: #fff;
+        }
+
+        .loader-bar {
+            width: 10px;
+            /* 不取100%的话，可以让球与柱之间稍微留一点空隙 */
+            height: 90%;
+            background: #fff;
+            position: absolute;
+            bottom: 0;
+            /* 因为前面的css属性会被后面相同属性的覆盖 */
+            /* 所以兼容性属性最好应该放在前面 */
+            /* 改变transform的基准位置为底边中点 */
+            -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
+            /* 向右向下1px，扩散0px，黑色 */
+            /* box-shadow: 1px 1px 0 rgba(0, 0, 0, .2); */
+        }
+
+        /* 第一个bar */
+        .loader-bar:nth-child(1) {
+            left: 0px;
+            /* y轴方向压缩变换 */
+            transform: scaleY(.2);
+            -webkit-animation: scale1 4s infinite;
+            animation: scale1 4s infinite;
+        }
+
+        .loader-bar:nth-child(2) {
+            left: 15px;
+            transform: scaleY(.4);
+            -webkit-animation: scale2 4s infinite;
+            animation: scale2 4s infinite;
+        }
+
+        .loader-bar:nth-child(3) {
+            left: 30px;
+            transform: scaleY(.6);
+        }
+
+        .loader-bar:nth-child(4) {
+            left: 45px;
+            transform: scaleY(.8);
+            -webkit-animation: scale4 4s infinite;
+            animation: scale4 4s infinite;
+        }
+
+        .loader-bar:nth-child(5) {
+            left: 60px;
+            -webkit-animation: scale5 4s infinite;
+            animation: scale5 4s infinite;
+        }
+
+        /* 伸缩动画 */
+        /* 节省篇幅（偷懒），省略了@-webkit-keyframes兼容 */
+        @keyframes scale1 {
+            0% {
+                -webkit-transform: scale(1, 0.2);
+                transform: scale(1, 0.2);
+            }
+
+            40% {
+                -webkit-transform: scale(1, 0.2);
+                transform: scale(1, 0.2);
+            }
+
+            50% {
+                -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+
+            90% {
+                -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+
+            100% {
+                -webkit-transform: scale(1, 0.2);
+                transform: scale(1, 0.2);
+            }
+        }
+
+        @keyframes scale2 {
+            0% {
+                -webkit-transform: scale(1, 0.4);
+                transform: scale(1, 0.4);
+            }
+
+            40% {
+                -webkit-transform: scale(1, 0.4);
+                transform: scale(1, 0.4);
+            }
+
+            50% {
+                -webkit-transform: scale(1, 0.8);
+                transform: scale(1, 0.8);
+            }
+
+            90% {
+                -webkit-transform: scale(1, 0.8);
+                transform: scale(1, 0.8);
+            }
+
+            100% {
+                -webkit-transform: scale(1, 0.4);
+                transform: scale(1, 0.4);
+            }
+        }
+
+        @keyframes scale4 {
+            0% {
+                -webkit-transform: scale(1, 0.8);
+                transform: scale(1, 0.8);
+            }
+
+            40% {
+                -webkit-transform: scale(1, 0.8);
+                transform: scale(1, 0.8);
+            }
+
+            50% {
+                -webkit-transform: scale(1, 0.4);
+                transform: scale(1, 0.4);
+            }
+
+            90% {
+                -webkit-transform: scale(1, 0.4);
+                transform: scale(1, 0.4);
+            }
+
+            100% {
+                -webkit-transform: scale(1, 0.8);
+                transform: scale(1, 0.8);
+            }
+        }
+
+        @keyframes scale5 {
+            0% {
+                -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+
+            40% {
+                -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+
+            50% {
+                -webkit-transform: scale(1, 0.2);
+                transform: scale(1, 0.2);
+            }
+
+            90% {
+                -webkit-transform: scale(1, 0.2);
+                transform: scale(1, 0.2);
+            }
+
+            100% {
+                -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+        }
+
+        .loader-ball {
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            /* 画圆 */
+            border-radius: 50%;
+            background: #fff;
+            animation: ball 4s infinite;
+        }
+
+        @keyframes ball {
+            0% {
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+            }
+
+            5% {
+                -webkit-transform: translate(8px, -14px);
+                transform: translate(8px, -14px);
+            }
+
+            10% {
+                -webkit-transform: translate(15px, -10px);
+                transform: translate(15px, -10px);
+            }
+
+            17% {
+                -webkit-transform: translate(23px, -24px);
+                transform: translate(23px, -24px);
+            }
+
+            20% {
+                -webkit-transform: translate(30px, -20px);
+                transform: translate(30px, -20px);
+            }
+
+            27% {
+                -webkit-transform: translate(38px, -34px);
+                transform: translate(38px, -34px);
+            }
+
+            30% {
+                -webkit-transform: translate(45px, -30px);
+                transform: translate(45px, -30px);
+            }
+
+            37% {
+                -webkit-transform: translate(53px, -44px);
+                transform: translate(53px, -44px);
+            }
+
+            40% {
+                -webkit-transform: translate(60px, -40px);
+                transform: translate(60px, -40px);
+            }
+
+            50% {
+                -webkit-transform: translate(60px, 0);
+                transform: translate(60px, 0);
+            }
+
+            57% {
+                -webkit-transform: translate(53px, -14px);
+                transform: translate(53px, -14px);
+            }
+
+            60% {
+                -webkit-transform: translate(45px, -10px);
+                transform: translate(45px, -10px);
+            }
+
+            67% {
+                -webkit-transform: translate(37px, -24px);
+                transform: translate(37px, -24px);
+            }
+
+            70% {
+                -webkit-transform: translate(30px, -20px);
+                transform: translate(30px, -20px);
+            }
+
+            77% {
+                -webkit-transform: translate(22px, -34px);
+                transform: translate(22px, -34px);
+            }
+
+            80% {
+                -webkit-transform: translate(15px, -30px);
+                transform: translate(15px, -30px);
+            }
+
+            87% {
+                -webkit-transform: translate(7px, -44px);
+                transform: translate(7px, -44px);
+            }
+
+            90% {
+                -webkit-transform: translate(0, -40px);
+                transform: translate(0, -40px);
+            }
+
+            100% {
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader">
+        <div class="loader-bar"></div>
+        <div class="loader-bar"></div>
+        <div class="loader-bar"></div>
+        <div class="loader-bar"></div>
+        <div class="loader-bar"></div>
+        <div class="loader-ball"></div>
+        <p>Loading...</p>
+    </div>
+</body>
+
+</html>
