@@ -1,0 +1,44 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.reminding::after {
+    content: "";
+    background-image: linear-gradient(#2ea1f8, #1992eb);
+    font-size: 14px;
+    line-height: 1.785;
+    color: #fff;
+
+    height: 25px;
+    /* 不能用50% */
+    border-radius: 25px;
+    padding: 0 8px;
+
+    position: absolute;
+    /* 右对齐 */
+    right: 0;
+    /* 水平对齐 */
+    top: -6px;
+}
+
+.warning::after {
+    content: "!";
+    background-image: linear-gradient(#f35338, #cc280b);
+    font-size: 14px;
+    line-height: 1.785;
+    color: #fff;
+
+    height: 25px;
+    border-radius: 25px;
+    padding: 0 10px;
+
+    position: absolute;
+    right: 0;
+    top: -6px;
+}

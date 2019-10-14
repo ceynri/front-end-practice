@@ -1,0 +1,185 @@
+/* 最左侧栏 */
+.menu {
+    background: #1d2531;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+}
+
+.icon {
+    box-sizing: border-box;
+}
+
+.menu .menu-buttons .circle.icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu .menu-buttons .icon.blue {
+    /* bg-image前面的会盖住后面的 */
+    background-image: url("../imgs/item1.png"),
+        linear-gradient(#2ea1f8, #1992eb);
+}
+
+.menu .menu-buttons .icon.purple {
+    background-image: url("../imgs/item2.png"),
+        linear-gradient(#9c8ee3, #7b59df);
+}
+
+.menu .menu-buttons .icon.orange {
+    background-image: url("../imgs/item3.png"),
+        linear-gradient(#f35338, #cc280b);
+}
+
+.menu .menu-buttons .icon.more {
+    border: 3px solid #9fa9ba;
+    background-image: url("../imgs/add-icon.png");
+    opacity: .125;
+}
+
+.menu .bottom-menu-buttons {
+    position: fixed;
+    font-size: 0;
+    left: 25px;
+    bottom: 20px;
+}
+
+.menu .bottom-menu-buttons .grid {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(../imgs/grid.png);
+}
+
+.menu .bottom-menu-buttons .settings {
+    width: 16px;
+    height: 16px;
+    margin-left: 15px;
+    display: inline-block;
+    background: url(../imgs/settings.png);
+}
+
+/* 第二菜单栏 */
+
+.secondary {
+    width: 250px;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 100px;
+
+    box-sizing: border-box;
+    padding: 30px;
+    background: #222c3c;
+
+    font: 14px Tahoma, Helvetica, Arial, '宋体', sans-serif;
+
+    overflow: scroll;
+}
+
+/* 隐藏滚动条 */
+.secondary::-webkit-scrollbar {
+    width: 0;
+}
+
+.secondary .classification {
+    font: 12px Tahoma, Helvetica, Arial, '宋体', sans-serif;
+    text-transform: uppercase;
+    color: #475364;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.secondary .classification.settings::after {
+    content: "";
+    float: right;
+
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url(../imgs/settings.png);
+}
+
+.secondary .item {
+    text-transform: capitalize;
+    color: #b7c0cd;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.secondary .divider {
+    height: 1px;
+    width: 100%;
+    background: #293446;
+    margin: 25px 0;
+}
+
+.secondary .sales.item::after {
+    content: "54";
+}
+
+.secondary .messages.item::after {
+    content: "21";
+}
+
+/* monthly goals */
+.secondary .bottom {
+    /* 使用fixed才可以在浏览器竖向高度不够
+       需要滚动第二菜单栏时不会移动 */
+    position: fixed;
+    bottom: 0;
+    left: 100px;
+
+    /* 占据一定的空间，避免垂直高度不够时上面的菜单挤到下面 */
+    box-sizing: border-box;
+    width: 250px;
+    padding: 30px;
+
+    font-size: 12px;
+    color: #fff;
+    background: #222c3c;
+}
+
+.secondary .bottom .money {
+    float: right;
+}
+
+.secondary .progress-bar {
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    margin-top: 12px;
+
+    background: #2d3848;
+
+    position: relative;
+}
+
+.secondary .progress-bar::after {
+    content: "";
+    width: 18.125%;
+
+    height: 4px;
+    border-radius: 4px;
+    background-image: linear-gradient(to left, #9c8ee3, #7b59df);
+
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+.test {}
