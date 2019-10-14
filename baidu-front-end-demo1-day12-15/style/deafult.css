@@ -10,6 +10,7 @@ body {
     width: auto;
     height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 14px;
 }
 
 a {
@@ -27,7 +28,7 @@ a {
     height: 25px;
     /* 不能用50% */
     border-radius: 25px;
-    padding: 0 8px;
+    padding: 0 9px;
 
     position: absolute;
     /* 右对齐 */
@@ -61,5 +62,29 @@ a {
 /* 主窗口 */
 
 .main {
-    color: #354052;
+    color: #585d68;
+}
+
+.main .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.main .avatar img {
+    width: 50px;
+    height: 50px;
+}
+
+/* 聊天框架 */
+
+.main .chats {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
 }

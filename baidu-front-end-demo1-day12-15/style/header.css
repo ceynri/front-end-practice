@@ -35,29 +35,27 @@
 
 .main header .profile {
     position: absolute;
-    right: 30px;
-    top: 0px;
-    padding: 15px 0;
+    right: 0;
+    top: 0;
+    padding: 15px 30px;
+    height: 80px;
+    border-bottom: 1px solid #e3e6ea;
+    overflow: hidden;
     /* 横向宽度不足时盖过标题（真不足时其实已经不适合浏览了） */
     background: #fff;
 }
 
 /* 头像 */
 
-.main header .profile img {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-
+.main header .profile .avatar {
     float: left;
     margin-right: 20px;
 }
 
 .main header .profile .status {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 45px;
+    left: 60px;
     width: 20px;
     height: 20px;
     background: #fff;
@@ -65,7 +63,7 @@
 }
 
 /* 利用伪元素画个圆圈 */
-.main header .profile .status::before {
+.main header .profile .status::after {
     content: "";
     position: absolute;
     top: 3px;
@@ -91,7 +89,7 @@
     color: #2489d4;
 }
 
-.main header .profile a {
+.main header .profile>a {
     display: inline-block;
     margin-left: 36px;
 }

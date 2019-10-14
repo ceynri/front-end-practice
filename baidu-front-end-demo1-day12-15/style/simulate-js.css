@@ -15,3 +15,7 @@
     font-weight: normal;
     color: #b7c0cd;
 }
+
+.main .chats .chat-list .list .card .info-container.reminding::after {
+    content: "4";
+}

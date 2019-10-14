@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style/secordary.css" />
   <link rel="stylesheet" href="style/header.css" />
   <link rel="stylesheet" href="style/simulate-js.css" />
-  <link rel="stylesheet" href="style/chats.css" />
+  <link rel="stylesheet" href="style/chat-list.css" />
   <link rel="stylesheet" href="style/open-chat.css" />
 </head>
 
@@ -16,6 +16,7 @@
   <!-- menu -->
   <nav class="menu">
     <div class="menu-buttons">
+      <!-- TODO: 该不该用button？ -->
       <button type="button" class="circle blue selected"></button>
       <button type="button" class="circle purple"></button>
       <button type="button" class="circle orange"></button>
@@ -105,12 +106,16 @@
     <header>
       <h1>Messages</h1>
       <div class="profile">
-        <img src="imgs/avatars/avatar_02.png" alt="my avatar" title="more..." />
+        <div class="avatar">
+          <img src="imgs/avatars/avatar_00.png" alt="my avatar" title="more..." />
+        </div>
         <div class="status"></div>
         <div class="description">
           <span class="name"><a class="me" href="#">Ceynri</a></span>
         </div>
-        <a href="#"><div class="dropdown-button"></div></a>
+        <a href="#">
+          <div class="dropdown-button"></div>
+        </a>
       </div>
     </header>
 
@@ -122,33 +127,174 @@
         </form>
 
         <div class="list">
-          <div class="card selected">
-            <div class="avatar"></div>
-            <div class="name">
-              Bessie Berry
-            </div>
-            <div></div>
-            <div class="info">I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick,
-              and stable...</div>
-          </div>
-          <div class="card">test</div>
-          <div class="card">test</div>
-          <div class="card">test</div>
-          <div class="card">test</div>
-          <div class="card">test</div>
-          <div class="card">test</div>
-          <div class="card">test</div>
-          <div class="card">test</div>
-          <div class="card">test</div>
-          <div class="card">test</div>
-          <div class="card">test</div>
-        </div>
-      </div>
 
-      <!-- open-chat -->
-      <div class="open-chat">
+          <div class="card selected">
+            <div class="wrapper">
+              <div class="avatar">
+                <img src="imgs/avatars/avatar_01.png" alt="avatar" />
+              </div>
+              <div class="description">
+                <span class="name">Manticore</span>
+                <span class="company">Twitter</span>
+              </div>
+              <div class="time">3m</div>
+            </div>
+            <div class="info-container reminding">
+              <div class="info">
+                I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable...
+              </div>
+            </div>
+          </div>
+
+        <div class="card">
+          <div class="wrapper">
+            <div class="avatar">
+              <img src="imgs/avatars/avatar_02.png" alt="avatar" />
+            </div>
+            <div class="description">
+              <span class="name">Sora</span>
+              <span class="company">Adobe</span>
+            </div>
+            <div class="time">8m</div>
+          </div>
+          <div class="info-container">
+            <div class="info">
+              I shared this on my fb wall a few months back, and I thought I'd share it here again because it's such a
+              great...
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <div class="avatar">
+              <img src="imgs/avatars/avatar_03.png" alt="avatar" />
+            </div>
+            <div class="description">
+              <span class="name">Blue Poison</span>
+              <span class="company">Facebook</span>
+            </div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="info-container">
+            <div class="info">
+              If there is anyone who needs an invitation please add yourself in the comments of this post!
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <div class="avatar">
+              <img src="imgs/avatars/avatar_04.png" alt="avatar" />
+            </div>
+            <div class="description">
+              <span class="name">Myrrh</span>
+              <span class="company">Yahoo</span>
+            </div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="info-container">
+            <div class="info">
+              BruteDC is a peer-to-peer movie+tv series sharing and downloading platform which works on intranet
+              inside...
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <div class="avatar">
+              <img src="imgs/avatars/avatar_05.png" alt="avatar" />
+            </div>
+            <div class="description">
+              <span class="name">Slience</span>
+              <span class="company">Snapchat</span>
+            </div>
+            <div class="time">13 Jun</div>
+          </div>
+          <div class="info-container">
+            <div class="info">
+              Yes, p2p traffic is often filtered (QoSed). Although i do use BT on O2 wires, and in good days dl speed...
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <div class="avatar">
+              <img src="imgs/avatars/avatar_06.png" alt="avatar" />
+            </div>
+            <div class="description">
+              <span class="name">Истина</span>
+              <span class="company">Twitter</span>
+            </div>
+            <div class="time">12 Jun</div>
+          </div>
+          <div class="info-container">
+            <div class="info">
+              Yes, it's O2: 'internet extreme', which is no longer offered.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <div class="avatar">
+              <img src="imgs/avatars/avatar_07.png" alt="avatar" />
+            </div>
+            <div class="description">
+              <span class="name">amiya</span>
+              <span class="company">A Team</span>
+            </div>
+            <div class="time">9 Jun</div>
+          </div>
+          <div class="info-container">
+            <div class="info">
+              I change my service from this 4Mb plan to their much cheaper 8Mb plan, my speed will dramatically
+              decrease.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <div class="avatar">
+              <img src="imgs/avatars/avatar_08.png" alt="avatar" />
+            </div>
+            <div class="description">
+              <span class="name">Firewatch</span>
+              <span class="company">Tencent</span>
+            </div>
+            <div class="time">2 Jun</div>
+          </div>
+          <div class="info-container">
+            <div class="info">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="wrapper">
+            <div class="avatar">
+              <img src="imgs/avatars/avatar_09.png" alt="avatar" />
+            </div>
+            <div class="description">
+              <span class="name">Texas</span>
+              <span class="company">Alibaba</span>
+            </div>
+            <div class="time">1 Jun</div>
+          </div>
+          <div class="info-container">
+            <div class="info">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+
+    <!-- open-chat -->
+    <div class="open-chat">
+    </div>
+  </div>
   </div>
 </body>
 
