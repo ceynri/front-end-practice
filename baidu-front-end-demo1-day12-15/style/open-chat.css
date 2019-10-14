@@ -2,4 +2,16 @@
 
 .main .chats .open-chat {
     flex: 2;
+    
+    overflow: scroll;
+    /* IE10/Edge 去除滚动条 */
+    -ms-overflow-style: none;
+    /* firefox 64 隐藏滚动条 */
+    scrollbar-color: transparent transparent;
+    /* firefox 64 去除滚动条 */
+    scrollbar-width: none;
+}
+/* 隐藏滚动条 */
+.main .chats .open-chat::-webkit-scrollbar {
+    width: 0;
 }

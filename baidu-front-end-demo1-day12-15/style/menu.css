@@ -10,10 +10,6 @@
     height: 100vh;
 }
 
-.icon {
-    box-sizing: border-box;
-}
-
 /* 左侧栏按钮 */
 
 .menu button {
@@ -69,7 +65,7 @@
 /* 按钮icon */
 
 .menu .menu-buttons button::after {
-    content:"";
+    content: "";
     position: absolute;
     top: 0px;
     left: 0px;
@@ -80,24 +76,24 @@
 }
 
 .menu .menu-buttons button.blue::after {
-    background-image: url("../imgs/item1.png");
+    background-image: url("../imgs/icons/item1.png");
     /* 由于该icon的视觉位置偏移，单独调整位置 */
     top: 2px;
     left: 1px;
 }
 
 .menu .menu-buttons button.purple::after {
-    background-image: url("../imgs/item2.png");
+    background-image: url("../imgs/icons/item2.png");
 }
 
 .menu .menu-buttons button.orange::after {
-    background-image: url("../imgs/item3.png");
+    background-image: url("../imgs/icons/item3.png");
 }
 
 .menu .menu-buttons button.more:after {
     /* 减掉border的位置 */
     transform: translate(-3px, -3px);
-    background-image: url("../imgs/add-icon.png");
+    background-image: url("../imgs/icons/add-icon.png");
 }
 
 /* 左侧栏底下 */
@@ -113,7 +109,7 @@
     width: 16px;
     height: 16px;
     display: inline-block;
-    background: url(../imgs/grid.png);
+    background: url(../imgs/icons/grid.png);
 }
 
 .menu .bottom-menu-buttons .settings {
@@ -121,7 +117,7 @@
     height: 16px;
     margin-left: 15px;
     display: inline-block;
-    background: url(../imgs/settings.png);
+    background: url(../imgs/icons/settings.png);
 }
 
 /* 第二菜单栏 */
@@ -134,25 +130,29 @@
     top: 0;
     left: 100px;
 
-    box-sizing: border-box;
     padding: 30px;
     background: #222c3c;
 
-    font: 14px Tahoma, Helvetica, Arial, '宋体', sans-serif;
+    font-size: 14px;
 
     overflow: scroll;
+    /* IE10/Edge 去除滚动条 */
+    -ms-overflow-style: none;
+    /* firefox 64 隐藏滚动条 */
+    scrollbar-color: transparent transparent;
+    /* firefox 64 去除滚动条 */
+    scrollbar-width: none;
 }
 
-/* 隐藏滚动条 */
+/* Chrome 隐藏滚动条 */
 .secondary::-webkit-scrollbar {
     width: 0;
 }
 
 .secondary .classification {
-    font: 12px Tahoma, Helvetica, Arial, '宋体', sans-serif;
+    font-size: 12px;
     text-transform: uppercase;
     color: #475364;
-    font-weight: bold;
     margin-bottom: 25px;
 }
 
@@ -165,7 +165,7 @@
     height: 16px;
     float: right;
     cursor: pointer;
-    background: url(../imgs/settings.png);
+    background: url(../imgs/icons/settings.png);
 }
 
 .secondary .item {
@@ -196,19 +196,19 @@
 }
 
 .secondary .part2 .books.item::before {
-    background-image: url(../imgs/book-of-wisdom.png);
+    background-image: url(../imgs/icons/book-of-wisdom.png);
 }
 
 .secondary .part2 .tutorials.item::before {
-    background-image: url(../imgs/video-camera.png);
+    background-image: url(../imgs/icons/video-camera.png);
 }
 
 .secondary .part2 .stocks.item::before {
-    background-image: url(../imgs/painting.png);
+    background-image: url(../imgs/icons/painting.png);
 }
 
 .secondary .part2 .infographics.item::before {
-    background-image: url(../imgs/chart.png);
+    background-image: url(../imgs/icons/chart.png);
 }
 
 
@@ -222,7 +222,6 @@
     left: 100px;
 
     /* 占据一定的空间，避免垂直高度不够时上面的菜单挤到下面 */
-    box-sizing: border-box;
     width: 250px;
     padding: 30px;
 
