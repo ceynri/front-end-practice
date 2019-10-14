@@ -1,0 +1,154 @@
+/* 第二菜单栏 */
+
+.secondary {
+    width: 250px;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 100px;
+
+    padding: 30px;
+    background: #222c3c;
+
+    font-size: 14px;
+
+    overflow: scroll;
+    /* IE10/Edge 去除滚动条 */
+    -ms-overflow-style: none;
+    /* firefox 64 隐藏滚动条 */
+    scrollbar-color: transparent transparent;
+    /* firefox 64 去除滚动条 */
+    scrollbar-width: none;
+}
+
+/* Chrome 隐藏滚动条 */
+.secondary::-webkit-scrollbar {
+    width: 0;
+}
+
+.secondary .classification {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #475364;
+    margin-bottom: 25px;
+}
+
+/* 这里的settings按钮其实应该使用js生成才可以实现点击跳转 */
+/* 否则需要在html里每一个分类都添加一次settings按钮 */
+.secondary .classification.settings::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: right;
+    cursor: pointer;
+    background: url(../imgs/icons/settings.png);
+}
+
+.secondary .item {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.secondary .divider {
+    height: 1px;
+    width: 100%;
+    background: #293446;
+    margin: 25px 0;
+}
+
+/* part2 icon */
+
+.secondary .part2 .item::before {
+    content: "";
+    float: left;
+    display: block;
+    transform: translateY(-2px);
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.secondary .part2 .books.item::before {
+    background-image: url(../imgs/icons/book-of-wisdom.png);
+}
+
+.secondary .part2 .tutorials.item::before {
+    background-image: url(../imgs/icons/video-camera.png);
+}
+
+.secondary .part2 .stocks.item::before {
+    background-image: url(../imgs/icons/painting.png);
+}
+
+.secondary .part2 .infographics.item::before {
+    background-image: url(../imgs/icons/chart.png);
+}
+
+
+/* monthly goals */
+
+.secondary .bottom {
+    /* 使用fixed才可以在浏览器竖向高度不够
+       需要滚动第二菜单栏时不会移动 */
+    position: fixed;
+    bottom: 0;
+    left: 100px;
+
+    /* 占据一定的空间，避免垂直高度不够时上面的菜单挤到下面 */
+    width: 250px;
+    padding: 30px;
+
+    font-size: 12px;
+    color: #fff;
+    background: #222c3c;
+}
+
+.secondary .bottom .money {
+    float: right;
+}
+
+.secondary .progress-bar {
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    margin-top: 12px;
+
+    background: #2d3848;
+
+    position: relative;
+}
+
+.secondary .progress-bar::after {
+    content: "";
+    width: 18.125%;
+
+    height: 4px;
+    border-radius: 4px;
+    background-image: linear-gradient(to left, #9c8ee3, #7b59df);
+
+    position: absolute;
+}
+
+/* 被选中的项目 */
+
+.secondary .item.selected {
+    color: #fff;
+}
+
+.secondary .item.selected::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #2399f1;
+    box-shadow: 0 0 8px #2399f1;
+
+    position: absolute;
+    top: 6px;
+    left: -31px;
+}
