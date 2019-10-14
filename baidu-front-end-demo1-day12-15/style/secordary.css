@@ -112,6 +112,11 @@
     float: right;
 }
 
+
+.secondary .bottom .bold {
+    font-weight: 500;
+}
+
 .secondary .progress-bar {
     width: 100%;
     height: 4px;

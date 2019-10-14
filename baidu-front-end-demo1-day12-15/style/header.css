@@ -15,7 +15,6 @@
     left: 0;
     height: 80px;
 
-    padding: 0 30px;
     border-bottom: 1px solid #e3e6ea;
 }
 
@@ -25,6 +24,7 @@
     /* 首字母大写 */
     text-transform: capitalize;
     margin: 0;
+    padding: 24px 30px;
     /* 垂直居中 */
     position: absolute;
     top: 40px;
@@ -36,8 +36,10 @@
 .main header .profile {
     position: absolute;
     right: 30px;
-    top: 40px;
-    transform: translateY(-50%);
+    top: 0px;
+    padding: 15px 0;
+    /* 横向宽度不足时盖过标题（真不足时其实已经不适合浏览了） */
+    background: #fff;
 }
 
 /* 头像 */
@@ -74,6 +76,32 @@
     border-radius: 50%;
 }
 
-.main header .profile .span:nth-child(1) {
-    
+.main header .profile .description {
+    display: inline-block;
+    /* 居中 */
+    position: relative;
+    top: 25px;
+    transform: translateY(-50%);
+}
+
+.main header .profile .description span.name {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2489d4;
+}
+
+.main header .profile a {
+    display: inline-block;
+    margin-left: 36px;
+}
+
+.main header .profile .dropdown-button {
+    display: block;
+    width: 11px;
+    height: 7px;
+    /* 垂直居中 */
+    position: relative;
+    top: -4px;
+    background: url(../imgs/icons/dropdown.png);
 }

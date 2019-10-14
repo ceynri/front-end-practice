@@ -7,3 +7,11 @@
 .secondary .messages.item::after {
     content: "21";
 }
+
+.main header .profile .description span.name::after {
+    display: block;
+    content: "Administrator";
+    font-size: 14px;
+    font-weight: normal;
+    color: #b7c0cd;
+}
