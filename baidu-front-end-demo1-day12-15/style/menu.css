@@ -1,4 +1,5 @@
-/* 最左侧栏 */
+/* 左侧栏 */
+
 .menu {
     background: #1d2531;
     position: fixed;
@@ -13,40 +14,96 @@
     box-sizing: border-box;
 }
 
-.menu .menu-buttons .circle.icon {
+/* 左侧栏按钮 */
+
+.menu button {
+    /* background: transparent; */
+    border: 0;
+    margin: 0;
+    padding: 0;
+    /* 去掉选中后的蓝色框框 */
+    outline: none;
+}
+
+.menu button:hover {
+    cursor: pointer;
+}
+
+.menu .menu-buttons {
+    padding: 20px;
+}
+
+.menu .menu-buttons button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    margin: 20px;
 
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.menu .menu-buttons button:last-child {
+    margin-bottom: 0;
+}
+
+/* 按钮背景 */
+
+.menu .menu-buttons button.blue {
+    background-image: linear-gradient(#2ea1f8, #1992eb);
+}
+
+.menu .menu-buttons button.purple {
+    background-image: linear-gradient(#9c8ee3, #7b59df);
+}
+
+.menu .menu-buttons button.orange {
+    background-image: linear-gradient(#f35338, #cc280b);
+}
+
+.menu .menu-buttons button.more {
+    border: 3px solid #9fa9ba;
+    background: transparent;
+    opacity: .125;
+}
+
+/* 按钮icon */
+
+.menu .menu-buttons button::after {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.menu .menu-buttons .icon.blue {
-    /* bg-image前面的会盖住后面的 */
-    background-image: url("../imgs/item1.png"),
-        linear-gradient(#2ea1f8, #1992eb);
+.menu .menu-buttons button.blue::after {
+    background-image: url("../imgs/item1.png");
+    /* 由于该icon的视觉位置偏移，单独调整位置 */
+    top: 2px;
+    left: 1px;
 }
 
-.menu .menu-buttons .icon.purple {
-    background-image: url("../imgs/item2.png"),
-        linear-gradient(#9c8ee3, #7b59df);
+.menu .menu-buttons button.purple::after {
+    background-image: url("../imgs/item2.png");
 }
 
-.menu .menu-buttons .icon.orange {
-    background-image: url("../imgs/item3.png"),
-        linear-gradient(#f35338, #cc280b);
+.menu .menu-buttons button.orange::after {
+    background-image: url("../imgs/item3.png");
 }
 
-.menu .menu-buttons .icon.more {
-    border: 3px solid #9fa9ba;
+.menu .menu-buttons button.more:after {
+    /* 减掉border的位置 */
+    transform: translate(-3px, -3px);
     background-image: url("../imgs/add-icon.png");
-    opacity: .125;
 }
+
+/* 左侧栏底下 */
 
 .menu .bottom-menu-buttons {
-    position: fixed;
+    position: absolute;
     font-size: 0;
     left: 25px;
     bottom: 20px;
@@ -99,19 +156,20 @@
     margin-bottom: 25px;
 }
 
+/* 这里的settings按钮其实应该使用js生成才可以实现点击跳转 */
+/* 否则需要在html里每一个分类都添加一次settings按钮 */
 .secondary .classification.settings::after {
     content: "";
-    float: right;
-
+    display: block;
     width: 16px;
     height: 16px;
-    display: block;
+    float: right;
+    cursor: pointer;
     background: url(../imgs/settings.png);
 }
 
 .secondary .item {
     text-transform: capitalize;
-    color: #b7c0cd;
     margin-bottom: 20px;
     position: relative;
 }
@@ -123,15 +181,39 @@
     margin: 25px 0;
 }
 
-.secondary .sales.item::after {
-    content: "54";
+/* part2 icon */
+
+.secondary .part2 .item::before {
+    content: "";
+    float: left;
+    display: block;
+    transform: translateY(-2px);
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.secondary .messages.item::after {
-    content: "21";
+.secondary .part2 .books.item::before {
+    background-image: url(../imgs/book-of-wisdom.png);
 }
+
+.secondary .part2 .tutorials.item::before {
+    background-image: url(../imgs/video-camera.png);
+}
+
+.secondary .part2 .stocks.item::before {
+    background-image: url(../imgs/painting.png);
+}
+
+.secondary .part2 .infographics.item::before {
+    background-image: url(../imgs/chart.png);
+}
+
 
 /* monthly goals */
+
 .secondary .bottom {
     /* 使用fixed才可以在浏览器竖向高度不够
        需要滚动第二菜单栏时不会移动 */
@@ -175,11 +257,34 @@
     position: absolute;
 }
 
+/* 被选中的项目 */
 
+.menu button.selected::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #2399f1;
+    box-shadow: 0 0 8px #2399f1;
 
+    position: absolute;
+    top: 28px;
+    left: -21px;
+}
 
+.secondary .item.selected {
+    color: #fff;
+}
 
+.secondary .item.selected::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #2399f1;
+    box-shadow: 0 0 8px #2399f1;
 
-
-
-.test {}
+    position: absolute;
+    top: 6px;
+    left: -31px;
+}

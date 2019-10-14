@@ -1,1 +1,1 @@
-[2019-10-14 01:08:49] layer "Settings.png": Duplicate path: Settings.png
+[2019-10-14 12:52:02] layer "Settings.png": Duplicate path: Settings.png

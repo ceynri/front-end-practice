@@ -5,52 +5,86 @@
   <title>Messages</title>
   <link rel="stylesheet" href="style/deafult.css" />
   <link rel="stylesheet" href="style/menu.css" />
+  <link rel="stylesheet" href="style/header.css" />
+  <link rel="stylesheet" href="style/simulate-js.css" />
+  <link rel="stylesheet" href="style/chats.css" />
+  <link rel="stylesheet" href="style/open-chat.css" />
 </head>
 
 <body>
-  <aside class="menu">
+  <nav class="menu">
     <div class="menu-buttons">
-      <div class="icon circle blue"></div>
-      <div class="icon circle purple"></div>
-      <div class="icon circle orange"></div>
-      <div class="icon circle more"></div>
+      <button type="button" class="circle blue selected"></button>
+      <button type="button" class="circle purple"></button>
+      <button type="button" class="circle orange"></button>
+      <button type="button" class="circle more"></button>
     </div>
 
     <div class="bottom-menu-buttons">
-      <div class="icon grid"></div>
-      <div class="icon settings"></div>
+      <a href="#">
+        <div class="icon grid"></div>
+      </a>
+      <a href="#">
+        <div class="icon settings"></div>
+      </a>
     </div>
-  </aside>
+  </nav>
 
   <aside class="secondary">
     <div class="part1">
       <div class="classification settings">MENU</div>
-      <div class="item overview">Overview</div>
-      <div class="item sales reminding">Sales</div>
-      <div class="item staff">Your Staff</div>
-      <div class="item a&t">Analytics & Targeting</div>
-      <div class="item new">What's New</div>
+      <a href="#">
+        <div class="item overview">Overview</div>
+      </a>
+      <a href="#">
+        <div class="item sales reminding">Sales</div>
+      </a>
+      <a href="#">
+        <div class="item staff">Your Staff</div>
+      </a>
+      <a href="#">
+        <div class="item a&t">Analytics & Targeting</div>
+      </a>
+      <a href="#">
+        <div class="item new">What's New</div>
+      </a>
     </div>
 
     <div class="divider"></div>
 
     <div class="part2">
       <div class="classification settings">YOUR PRODUCTS</div>
-      <div class="item books">Books</div>
-      <div class="item tutorials">Tutorials</div>
-      <div class="item stocks">Stocks</div>
-      <div class="item infographics">Infographics</div>
+      <a href="#">
+        <div class="item books">Books</div>
+      </a>
+      <a href="#">
+        <div class="item tutorials">Tutorials</div>
+      </a>
+      <a href="#">
+        <div class="item stocks">Stocks</div>
+      </a>
+      <a href="#">
+        <div class="item infographics">Infographics</div>
+      </a>
     </div>
 
     <div class="divider"></div>
 
     <div class="part3">
       <div class="classification settings">DASHBOARD</div>
-      <div class="item messages reminding">Messages</div>
-      <div class="item connections">Connections</div>
-      <div class="item intergrations warning">Intergrations</div>
-      <div class="item account-settings">Account Settings</div>
-      <div class="item app-settings">App Settings</div>
+      <a href="#">
+        <div class="item messages reminding selected">Messages</div>
+      </a>
+      <a href="#">
+        <div class="item connections">Connections</div>
+        <div class="item intergrations warning">Intergrations</div>
+      </a>
+      <a href="#">
+        <div class="item account-settings">Account Settings</div>
+      </a>
+      <a href="#">
+        <div class="item app-settings">App Settings</div>
+      </a>
     </div>
 
     <div class="bottom">
@@ -62,12 +96,46 @@
     </div>
   </aside>
 
-  <section class="chats">
-  </section>
+  <div class="main">
+    <header>
+      <h1>Messages</h1>
+      <div class="profile">
+        <div class="avatar"><img src="" alt="my avatar" title="more..." /></div>
+      </div>
+    </header>
+    <div class="chats">
+      <div class="chat-list">
+        <form class="search">
+          <input type="text" name="search" value="" placeholder="Search" />
+        </form>
+        <div class="list">
+          <div class="card selected">
+            <div class="avatar"></div>
+            <div class="name">
+              Bessie Berry
+            </div>
+            <div ></div>
+            <div class="info">I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable...</div>
+          </div>
+          <div class="card">test</div>
+          <div class="card">test</div>
+          <div class="card">test</div>
+          <div class="card">test</div>
+          <div class="card">test</div>
+          <div class="card">test</div>
+          <div class="card">test</div>
+          <div class="card">test</div>
+          <div class="card">test</div>
+          <div class="card">test</div>
+          <div class="card">test</div>
+        </div>
 
-  <section class="open-chat">
-  </section>
+      </div>
 
+      <div class="open-chat">
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

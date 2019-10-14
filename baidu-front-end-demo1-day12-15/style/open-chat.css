@@ -1,0 +1,5 @@
+/* open chat */
+
+.main .chats .open-chat {
+    flex: 2;
+}

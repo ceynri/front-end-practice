@@ -1,0 +1,9 @@
+/* 放一些本来应该由js生成比较合适的css */
+
+.secondary .sales.item::after {
+    content: "54";
+}
+
+.secondary .messages.item::after {
+    content: "21";
+}

@@ -2,6 +2,8 @@ html,
 body {
     margin: 0;
     padding: 0;
+    width: auto;
+    height: 100vh;
 }
 
 .bold {
@@ -24,7 +26,7 @@ body {
     /* 右对齐 */
     right: 0;
     /* 水平对齐 */
-    top: -6px;
+    top: -4px;
 }
 
 .warning::after {
@@ -40,5 +42,23 @@ body {
 
     position: absolute;
     right: 0;
-    top: -6px;
+    top: -4px;
+}
+
+/* 侧栏 */
+
+.secondary {
+    color: #b7c0cd;
+}
+
+.menu a,
+.secondary a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 主窗口 */
+
+.main {
+    color: #354052;
 }

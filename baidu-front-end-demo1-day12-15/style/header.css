@@ -1,0 +1,39 @@
+.main {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 350px;
+}
+
+/* 顶栏 */
+
+.main header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+
+    box-sizing: border-box;
+    padding: 0 30px;
+    border-bottom: 1px solid #e3e6ea;
+}
+
+.main header h1 {
+    margin: 0;
+    font-size: 24px;
+    /* 垂直居中 */
+    position: absolute;
+    top: 40px;
+    transform: translateY(-50%);
+}
+
+/* 个人信息 */
+
+.main header .profile {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    transform: translateY(-50%);
+}
