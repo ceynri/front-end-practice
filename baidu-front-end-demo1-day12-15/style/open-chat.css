@@ -14,4 +14,5 @@
 /* 隐藏滚动条 */
 .main .chats .open-chat::-webkit-scrollbar {
     width: 0;
+    height: 0;
 }

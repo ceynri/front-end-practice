@@ -62,6 +62,7 @@
 /* 隐藏滚动条 */
 .main .chats .chat-list .list::-webkit-scrollbar {
     width: 0;
+    height: 0;
 }
 
 /* card */
@@ -70,6 +71,8 @@
     padding: 15px 30px 20px;
     width: 100%;
     border-bottom: 1px solid #e3e6ea;
+    /* 如果需要产生点击事件需要添加事件监听 */
+    cursor: pointer;
 }
 
 .main .chats .chat-list .list .card .wrapper {
@@ -121,6 +124,7 @@
 
 .main .chats .chat-list .list .card.selected {
     border-left: 4px solid #2399f1;
+    cursor: initial;
 }
 
 .main .chats .chat-list .list .card.selected .name {

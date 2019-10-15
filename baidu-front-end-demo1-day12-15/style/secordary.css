@@ -25,6 +25,7 @@
 /* Chrome 隐藏滚动条 */
 .secondary::-webkit-scrollbar {
     width: 0;
+    height: 0;
 }
 
 .secondary .classification {
