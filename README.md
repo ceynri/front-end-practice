@@ -8,7 +8,7 @@
 
 ## HTML + CSS
 
-- [百度前端技术学院 - 第十二天到第十五天，复杂页面实现 Demo](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/baidu-front-end-demo1-day12-15/index.html) [📃](baidu-front-end-demo1-day12-15/index.html)
+- [百度前端技术学院 - 第十二天到第十五天，复杂页面实现 Demo](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/baidu-front-end-demo1-day12-15/index.html) [📃](baidu-front-end-demo1-day12-15/index.html)  [未完成]
 
 <br/>
 
@@ -25,6 +25,10 @@
 - [图片3D分层悬浮效果](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/layered-suspension/layed-suspension.html) [📃](layed-suspension/layered-suspension.html)
 
 ![layed-suspension.gif](https://i.loli.net/2019/10/13/DU6VlXijBgbqsyt.gif)
+
+- [带浮动按钮卡片式图片展示](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/picture-card/picture-card.html) [📃](picture-card/picture-card.html)
+
+![picture-card.gif](https://i.loli.net/2019/10/19/cuTBXxYn97jw8J6.gif)
 
 ### Loader
 
