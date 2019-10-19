@@ -28,7 +28,7 @@
 
 - [带浮动按钮卡片式图片展示](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/picture-card/picture-card.html) [📃](picture-card/picture-card.html)
 
-![picture-card.gif](https://i.loli.net/2019/10/19/cuTBXxYn97jw8J6.gif)
+![picture-card.gif](https://i.loli.net/2019/10/19/qBlTefQOL29on1V.gif)
 
 ### Loader
 
