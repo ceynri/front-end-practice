@@ -18,7 +18,7 @@
 
 - [响应式布局的相册页](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/flex-gallery/flex-gallery.html) [📃](flex-gallery/flex-gallery.html)
 
-![flex-gallery.gif](https://i.loli.net/2019/10/13/uSFhkPymgrc5J16.gif)
+![flex-gallery.gif](https://i.loli.net/2019/10/19/T2QLblOmnXpKgFh.gif)
 
 ### Card
 
