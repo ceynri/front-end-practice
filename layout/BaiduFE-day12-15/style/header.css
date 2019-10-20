@@ -14,6 +14,7 @@
     right: 0;
     left: 0;
     height: 80px;
+    min-width: 750px;
 
     border-bottom: 1px solid #e3e6ea;
 }

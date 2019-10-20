@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
   <title>Messages</title>
   <link rel="stylesheet" href="style/deafult.css" />
   <link rel="stylesheet" href="style/menu.css" />
@@ -16,7 +17,7 @@
   <!-- menu -->
   <nav class="menu">
     <div class="menu-buttons">
-      <!-- TODO: 该不该用button？ -->
+      <!-- TODO: 此处不该用button！ -->
       <button type="button" class="circle blue selected"></button>
       <button type="button" class="circle purple"></button>
       <button type="button" class="circle orange"></button>
@@ -91,7 +92,8 @@
           <div class="item app-settings">App Settings</div>
         </a>
       </div>
-    </div>
+    </div> <!-- main-part end -->
+
     <div class="bottom">
       <span class="bold">Monthly Goals</span>
       <div class="money">
@@ -99,7 +101,7 @@
       </div>
       <div class="progress-bar"></div>
     </div>
-  </aside>
+  </aside> <!-- secondary end -->
 
   <!-- main -->
   <div class="main">
@@ -122,6 +124,7 @@
 
     <!-- chat-window -->
     <div class="chat-window">
+      <!-- chat-list -->
       <div class="chat-list">
         <form class="search">
           <input type="text" name="search" value="" placeholder="Search" />
@@ -146,7 +149,6 @@
               </div>
             </div>
           </div>
-
           <div class="card">
             <div class="wrapper">
               <div class="avatar">
@@ -291,13 +293,14 @@
           </div>
 
         </div>
-      </div>
+      </div> <!-- chat-list end -->
 
       <!-- open-chat -->
       <div class="open-chat">
         <!-- chat-header -->
         <header class="chat-header">
           <h1>Manticore</h1>
+
           <div class="buddy-btn btns">
             <a href="#">
               <div class="add-buddy btn"></div>
@@ -330,6 +333,7 @@
 
         <!-- chat-content -->
         <div class="chat-content">
+
           <div class="msg-block">
             <div class="avatar"><img src="imgs/avatars/avatar_01.png"></div>
             <section class="msg">
@@ -412,16 +416,18 @@
             </section>
           </div>
 
-        </div>
+        </div> <!-- chat-content end -->
 
         <!-- msg input -->
         <div class="msg-input">
           <button>+</button>
           <input value="Well, kinda both :) but more of that second option, ">
         </div>
-      </div>
-    </div>
-  </div>
+
+      </div> <!-- open-chat end -->
+    </div> <!-- chat-window end -->
+  </div> <!-- main end -->
+
 </body>
 
 </html>

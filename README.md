@@ -14,7 +14,9 @@
 
 ![flex-gallery.gif](https://i.loli.net/2019/10/20/ZdIhac731tEyQYW.gif)
 
-- [百度前端技术学院 - 第十二天到第十五天，复杂页面实现 Demo](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/layout/BaiduFE-day12-15/index.html) [📃](layout/BaiduFE-day12-15/)  [未完成]
+- [百度前端技术学院 - 第十二天到第十五天，复杂页面实现 Demo](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/layout/BaiduFE-day12-15/index.html) [📃](layout/BaiduFE-day12-15/)
+
+![baidu-fe-demo1.gif](https://i.loli.net/2019/10/21/NvpSAsb8xj1qGe3.gif)
 
 <br/>
 

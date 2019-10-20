@@ -1,8 +1,10 @@
 /* open chat */
 
 .main .chat-window .open-chat {
+    /* 对于多余的空间，open-chat占3份（3：1） */
     flex: 3;
     min-width: 450px;
+    /* flex竖向排列 */
     display: flex;
     flex-direction: column;
 }
