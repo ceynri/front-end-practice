@@ -1,44 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width" , initial-scale="1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="css\style.css">
+    <title>Login Button Demo</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <button class="login">
         <p>LOGIN</p>
-        <div class="loading ">
+        <div class="loading">
             <div></div>
             <div></div>
             <div></div>
         </div>
 
-        <!-- 使用svg绘制 -->
-        <svg class='checkmark' width='30px' height='30px' stroke='white' fill='none'>
-            <polyline points='2,10 12,18 28,2'></polyline>
+        <svg class="checkmark" width="30px" height="30px" stroke="white" fill="none">
+            <polyline points="2,15 12,23 28,7"></polyline>
         </svg>
     </button>
 </body>
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <script>
-    $($('.login').click(
+    // 去掉了一层$
+    $('.login').click(
         function () {
             if (!$(this).hasClass('active')) {
-                $(this).toggleClass('active');
+                // 模拟加载
                 setTimeout(
                     () => {
                         $(this).addClass('verity');
                     }, 2000
                 )
             }
+            $(this).toggleClass('active');
+
+            if ($(this).hasClass('verity')) {
+                $(this).removeClass('verity');
+            }
         }
-    ))
+    )
 </script>
 
 </html>

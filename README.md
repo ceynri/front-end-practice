@@ -16,6 +16,8 @@
 
 - [百度前端技术学院 - 第十二天到第十五天，复杂页面实现 Demo](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/layout/BaiduFE-day12-15/index.html) [📃](layout/BaiduFE-day12-15/)  [未完成]
 
+<br/>
+
 ## Card
 
 - [图片3D分层悬浮效果](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/card/SuspendedLayer/suspended-layer.html) [📃](card/SuspendedLayer/)
@@ -26,11 +28,19 @@
 
 ![picture-card.gif](https://i.loli.net/2019/10/19/qBlTefQOL29on1V.gif)
 
+<br/>
+
 ## Button
 
 - [动态伸缩搜索框](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/button/DynamicSearchBox/dynamic-search-box.html) [📃](button/DynamicSearchBox/)
 
 ![dynamic-search-box.gif](https://i.loli.net/2019/10/19/ZfNIvq1BOueShAr.gif)
+
+- [扁平化动画加载按钮](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/button/FlatLoginButton/flat-login-button.html) [📃](button/FlatLoginButton/)
+
+![Flat-login-button.gif](https://i.loli.net/2019/10/20/oPTvAXkMOD41QwV.gif)
+
+<br/>
 
 ## Loader
 
@@ -68,6 +78,7 @@
   - [带浮动按钮卡片式图片](https://www.youtube.com/watch?v=b8e6D7oBf4g) @DarkCode
 - Button
   - [动态伸缩搜索框](https://www.youtube.com/watch?v=v1PeTDrw6OY) @DarkCode
+  - [扁平化动画加载按钮](https://www.bilibili.com/video/av58709312) @前端实验室
 - Loader
   - [浮动气泡加载动画](https://codepen.io/CKH4/pen/ZGNyep/) @CKH4
   - [阶梯小球加载动画](http://codepen.io/ispal/pen/mVaaJe/) @ispal

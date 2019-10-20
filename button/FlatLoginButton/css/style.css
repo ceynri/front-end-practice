@@ -1,17 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/* button style start */
-.login{
+
+/* button */
+
+.login {
     position: relative;
     border: none;
     outline: none;
@@ -20,92 +22,93 @@ body{
     height: 5rem;
     border-radius: 5rem;
     background-color: #000;
+    box-shadow: 0 0.6rem 1.6rem #000;
+    cursor: pointer;
+
     color: #fff;
     font-weight: bold;
     font-size: 1.5rem;
-    box-shadow: 0 8px 28px black;
-    cursor: pointer;
 
     transition: .5s;
 }
 
-.active.login{
+.active.login {
     width: 5rem;
-    color:transparent;
+    color: transparent;
 }
 
-/* button style end */
+/* loading */
 
-/* loading style start */
-.loading{
+.loading {
     opacity: 0;
-    transition: .5s;
+    transition: .4s;
 }
 
-.active .loading{
+.active .loading {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
-    width: 70%;
+    width: 60%;
     height: 40%;
 
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-around;
     align-items: flex-end;
     opacity: 1;
 }
 
-.active .loading div{
+.active .loading div {
+    /* 小点点 */
     width: .3rem;
     height: .3rem;
     border-radius: 50%;
     background-color: #fff;
-
-    animation: .9s loading ease-in-out infinite alternate;
+    /*  动画名 | 持续时间 | 时间曲线 | 循环次数 | 动画方向（原路返回） */
+    animation: loading .8s ease-in-out infinite alternate;
 }
 
-@keyframes loading{
-    to{
-        transform: translate(0, -1rem);
-    }    
+@keyframes loading {
+    from {}
+
+    to {
+        transform: translateY(-1rem);
+    }
 }
 
-.active .loading div:nth-child(2){
+.active .loading div:nth-child(2) {
     animation-delay: .2s;
 }
 
-.active .loading div:nth-child(3){
+.active .loading div:nth-child(3) {
     animation-delay: .4s;
 }
 
-.verity .loading{
+/* 验证通过后，loading消失 */
+.verity .loading {
     opacity: 0;
 }
-/* loading style end */
 
-/* checkmark style start */
-.checkmark{
+/* checkmark */
+
+.checkmark {
     position: absolute;
     left: 50%;
-    top: 56%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     stroke-width: 2px;
-    /* 利用stroke的虚线和偏移值达到加载的动画效果 */
     stroke-dasharray: 36px;
     stroke-dashoffset: 36px;
 }
 
-.verity .checkmark{
-    animation: .6s show forwards;
+.verity .checkmark {
+    animation: show .6s forwards;
     animation-delay: .4s;
 }
 
-@keyframes show{
-    to{
+@keyframes show {
+    to {
         stroke-dashoffset: 0;
     }
 }
-/* checkmark style end */
-
