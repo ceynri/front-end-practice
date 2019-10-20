@@ -34,23 +34,23 @@
 
 ## Loader
 
-- [浮动气泡加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/bubbles-loader.html) [📃](loader/bubbles-loader.html)
+- [浮动气泡加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/BubblesLoader/bubbles-loader.html) [📃](loader/BubblesLoader)
 
 ![bubbles-loader.gif](https://i.loli.net/2019/10/13/Ezmo5FNUhQeVR7I.gif)
 
-- [阶梯小球加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/stairs-loader.html) [📃](loader/stairs-loader.html)
+- [阶梯小球加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/StairsLoader/stairs-loader.html) [📃](loader/StairsLoader)
 
 ![stairs-loader.gif](https://i.loli.net/2019/10/13/MEXaYj7uDpPibsg.gif)
 
-- [彩虹旋转加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/rainbow-loader.html) [📃](loader/rainbow-loader.html)
+- [彩虹旋转加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/RainbowLoader/rainbow-loader.html) [📃](loader/RainbowLoader)
 
 ![rainbow-loader.gif](https://i.loli.net/2019/10/13/Yo4xgtRiUBjQNIK.gif)
 
-- [飞行小人加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/flying-man-loader.html) [📃](loader/flying-man-loader.html)
+- [飞行小人加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/FlyingManLoader/flying-man-loader.html) [📃](loader/FlyingManLoader)
 
 ![flying-man-loader.gif](https://i.loli.net/2019/10/13/CFUw3xBz7vtiRJD.gif)
 
-- [{...} 加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/code-loader.html) [📃](loader/code-loader.html)
+- [{...} 加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/CodeLoader/code-loader.html) [📃](loader/CodeLoader)
 
 ![code-loader.gif](https://i.loli.net/2019/10/13/fYPXKIgv1mF4srD.gif)
 

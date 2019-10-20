@@ -1,0 +1,132 @@
+.loader {
+    /* 兼容 */
+    background: #000;
+    /* 背景：径向渐变（中心值，边缘值） */
+    background: radial-gradient(#222, #000);
+    /* 固定布局 */
+    position: fixed;
+    /* 铺满屏幕 */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    /* 盖住其他东西 */
+    /* z-index: 9999; */
+}
+
+.loader-inner {
+    width: 100px;
+    height: 60px;
+    /* absolute+auto-margin居中法 */
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* 遮罩，使圆圈砍半 */
+.loader-line-wrap {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100px;
+    /* 准确的半圆应该取45+7px，此处故意取的半圆角度不足180° */
+    height: 50px;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    /* 改变旋转中心位置，使其绕着底边中心点旋转 */
+    transform-origin: 50% 100%;
+    /* 三次贝塞尔曲线，参数为两个控制点的坐标（x1,y1,x2,y2） */
+    animation: spin 2s cubic-bezier(.2, .6, .4, 1.3) infinite;
+    /* animation: spin 2s ease infinite; */
+}
+
+.loader-line {
+    /* 用border + radius 绘制圈圈 */
+    /* transparent 为兼容不支持的浏览器，隐藏该圈圈 */
+    border: 4px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+
+    /* 水平居中 */
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    /* 兼容用（后面会变） */
+    /* width: 100px;
+    height: 100px;
+    top: 0; */
+}
+
+/* 延时设置 */
+.loader-line-wrap:nth-child(1) {
+    animation-delay: -50ms;
+}
+
+.loader-line-wrap:nth-child(2) {
+    animation-delay: -100ms;
+}
+
+.loader-line-wrap:nth-child(3) {
+    animation-delay: -150ms;
+}
+
+.loader-line-wrap:nth-child(4) {
+    animation-delay: -200ms;
+}
+
+.loader-line-wrap:nth-child(5) {
+    animation-delay: -250ms;
+}
+
+.loader-line-wrap:nth-child(1) .loader-line {
+    border-color: hsl(0, 80%, 60%);
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+
+.loader-line-wrap:nth-child(2) .loader-line {
+    border-color: hsl(60, 80%, 60%);
+    height: 76px;
+    width: 76px;
+    top: 14px;
+}
+
+.loader-line-wrap:nth-child(3) .loader-line {
+    border-color: hsl(120, 80%, 60%);
+    height: 62px;
+    width: 62px;
+    top: 21px;
+}
+
+.loader-line-wrap:nth-child(4) .loader-line {
+    border-color: hsl(180, 80%, 60%);
+    height: 48px;
+    width: 48px;
+    top: 28px;
+}
+
+.loader-line-wrap:nth-child(5) .loader-line {
+    border-color: hsl(240, 80%, 60%);
+    height: 34px;
+    width: 34px;
+    top: 35px;
+}
+
+@keyframes spin {
+
+    /* 15%的时间暂停一下旋转 */
+    0%,
+    15% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}
