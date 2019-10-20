@@ -120,8 +120,8 @@
       </div>
     </header>
 
-    <!-- chats -->
-    <div class="chats">
+    <!-- chat-window -->
+    <div class="chat-window">
       <div class="chat-list">
         <form class="search">
           <input type="text" name="search" value="" placeholder="Search" />
@@ -295,29 +295,129 @@
 
       <!-- open-chat -->
       <div class="open-chat">
-        <div class="chat-header">
-          <span class="current-chat-buddy">Manticore</span>
-          <div class="buddy-button buttons">
-            <a>
-              <div class="add-buddy button"></div>
+        <!-- chat-header -->
+        <header class="chat-header">
+          <h1>Manticore</h1>
+          <div class="buddy-btn btns">
+            <a href="#">
+              <div class="add-buddy btn"></div>
             </a>
-            <a>
-              <div class="buddy-details button"></div>
+            <a href="#">
+              <div class="buddy-details btn"></div>
             </a>
-            <a>
-              <div class="remote-buddy button"></div>
+            <a href="#">
+              <div class="remote-buddy btn"></div>
             </a>
-
-            <span class="page-num">1 of 28</span>
-            <div class="turn-page-button buttons">
-              <a>
-                <div class="page-up button"></div>
-              </a>
-              <a>
-                <div class="page-down button"></div>
-              </a>
-            </div>
           </div>
+
+          <div class="divider"></div>
+
+          <span class="page-num">1 of 28</span>
+
+          <div class="turn-page-btn btns">
+            <a href="#">
+              <div class="page-up btn">
+                <div></div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="page-down btn">
+                <div></div>
+              </div>
+            </a>
+          </div>
+        </header>
+
+        <!-- chat-content -->
+        <div class="chat-content">
+          <div class="msg-block">
+            <div class="avatar"><img src="imgs/avatars/avatar_01.png"></div>
+            <section class="msg">
+              <h1>Manticore</h1><time>8:31 AM</time>
+              <p>
+                Hi guys Ive got the O2 package and have really slow internet. A speed check online said i can get 3mbps
+                but it seems more like 0.5 these days, just freezing and taking ages to open pages and open audio files
+                for example. I have decided to switch to the UPC package which offers 10mbps but do you think i will get
+                it?
+              </p>
+            </section>
+          </div>
+
+          <div class="msg-block">
+            <div class="avatar"><img src="imgs/avatars/avatar_00.png"></div>
+            <section class="msg">
+              <h1>Ceynri</h1><time>8:31 AM</time>
+              <p>
+                I have internet for 9 month and nevere could benefit from the full capacity of 5Mbit/s as it is filtered
+                by O2 when it detect traffic on public p2p sharing in my situation all my internet speed slows to
+                512Kbit/s. I never had 400KB/s on when downloading from p2p public servers like torrent emule etc. I
+                downoad with 500KB/s from private trakers instead. So conlcusion O2 block trafic on p2p connections. I
+                have made hundreds of test in Italy and Sweden and Romania with the same file to doanload with the same
+                setting and same antivirus and just needed to open ports in firewall and forward same ports and the
+                speed
+                was at full capacity in 1 minute. here in 9 month never had this luck.
+              </p>
+            </section>
+          </div>
+
+          <div class="divider">
+            <span class="text">Tuesday</span>
+          </div>
+
+          <div class="msg-block">
+            <div class="avatar"><img src="imgs/avatars/avatar_01.png"></div>
+            <section class="msg">
+              <h1>Manticore</h1><time>8:31 AM</time>
+              <p>
+                Funny comparison. so would the proper antivirus not slow down the internet as much or do you mean a
+                freebie doenst protect the computer from viruses?
+              </p>
+            </section>
+          </div>
+
+          <div class="msg-block">
+            <div class="avatar"><img src="imgs/avatars/avatar_00.png"></div>
+            <section class="msg">
+              <h1>Ceynri</h1><time>8:31 AM</time>
+              <p>
+                I pay for the 4Mb/sec down, 512 Kb/sec up service from O2, and haven't had any problems. In fact, it's
+                relatively quick, and stable. It's not perfect, but I really don't have issues, as long as I keep track
+                of what I'm doing on it. I max out at about 3 Mb/sec down, and 350 Kb/sec up. Probably because of a
+                noisy telephone line, not because I'm being throttled. When my uploads go over 25 KB/sec (note, bytes,
+                not bits), my download speed suffers. This is expected, as downloads require upload bandwidth as well.
+              </p>
+              <div class="photos">
+                <a href="#">
+                  <div class="photo"></div>
+                </a>
+                <a href="#">
+                  <div class="photo"></div>
+                </a>
+              </div>
+            </section>
+          </div>
+
+          <div class="divider new">
+            <span class="text">New Messages</span>
+          </div>
+
+          <div class="msg-block">
+            <div class="avatar"><img src="imgs/avatars/avatar_01.png"></div>
+            <section class="msg">
+              <h1>Manticore</h1><time>8:31 AM</time>
+              <p>
+                I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable.
+                It's not perfect, but I really don't have issues, as long as I keep track of what I'm doing on it.
+              </p>
+            </section>
+          </div>
+
+        </div>
+
+        <!-- msg input -->
+        <div class="msg-input">
+          <button>+</button>
+          <input value="Well, kinda both :) but more of that second option, ">
         </div>
       </div>
     </div>

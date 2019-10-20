@@ -1,35 +1,33 @@
 /* 聊天列表 */
 
-.main .chats .chat-list {
-    /* position: absolute;
-    top: 0;
-    right: 400px;
-    left: 0;
-    bottom: 0; */
-
+.main .chat-window .chat-list {
     position: relative;
+    min-width: 300px;
     flex: 1;
     border-right: 1px solid #e3e6ea;
 }
 
 /* 搜索框 */
 
-.main .chats .chat-list .search {
+.main .chat-window .chat-list .search {
     /* width: 100%; */
+    height: 70px;
     display: flex;
     position: relative;
     border-bottom: 1px solid #e3e6ea;
 }
 
-.main .chats .chat-list .search input {
-    margin: 18px 30px;
+.main .chat-window .chat-list .search input {
+    height: 35px;
+    margin: auto 30px;
     padding: 0 14px;
     border: 1px solid #e3e6ea;
-    height: 35px;
+    border-radius: 4px;
+    outline: none;
     flex: auto;
 }
 
-.main .chats .chat-list .search::after {
+.main .chat-window .chat-list .search::after {
     content: "";
     position: absolute;
     top: 28px;
@@ -43,7 +41,7 @@
 
 /* list */
 
-.main .chats .chat-list .list {
+.main .chat-window .chat-list .list {
     position: absolute;
     top: 72px;
     bottom: 0;
@@ -60,14 +58,14 @@
 }
 
 /* 隐藏滚动条 */
-.main .chats .chat-list .list::-webkit-scrollbar {
+.main .chat-window .chat-list .list::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
 
 /* card */
 
-.main .chats .chat-list .list .card {
+.main .chat-window .chat-list .list .card {
     padding: 15px 30px 20px;
     width: 100%;
     border-bottom: 1px solid #e3e6ea;
@@ -75,20 +73,20 @@
     cursor: pointer;
 }
 
-.main .chats .chat-list .list .card .wrapper {
+.main .chat-window .chat-list .list .card .wrapper {
     width: 100%;
     height: 50px;
     position: relative;
     margin-bottom: 10px;
 }
 
-.main .chats .chat-list .list .card .avatar {
+.main .chat-window .chat-list .list .card .avatar {
     display: block;
 }
 
 /* description */
 
-.main .chats .chat-list .list .card .description {
+.main .chat-window .chat-list .list .card .description {
     display: block;
     position: absolute;
     top: 25px;
@@ -96,23 +94,23 @@
     transform: translateY(-50%);
 }
 
-.main .chats .chat-list .list .card .description span {
+.main .chat-window .chat-list .list .card .description span {
     display: block;
     text-transform: capitalize;
 }
 
-.main .chats .chat-list .list .card .description .name {
+.main .chat-window .chat-list .list .card .description .name {
     font-size: 16px;
     font-weight: 500;
 }
 
-.main .chats .chat-list .list .card .description .company {
+.main .chat-window .chat-list .list .card .description .company {
     font-weight: 500;
     color: #b5b5b5;
 }
 
 /* time */
-.main .chats .chat-list .list .card .time {
+.main .chat-window .chat-list .list .card .time {
     position: absolute;
     top: 8px;
     right: 0;
@@ -122,12 +120,12 @@
 
 /* 被选中的card */
 
-.main .chats .chat-list .list .card.selected {
+.main .chat-window .chat-list .list .card.selected {
     border-left: 4px solid #2399f1;
     cursor: initial;
 }
 
-.main .chats .chat-list .list .card.selected .name {
+.main .chat-window .chat-list .list .card.selected .name {
     color: #2399f1;
 }
 
@@ -148,19 +146,19 @@
 }
 
 /* 信息节选 */
-.main .chats .chat-list .list .card .info {
+.main .chat-window .chat-list .list .card .info {
     display: inline-block;
     position: relative;
 }
 
 /* 信息提醒 */
 
-.main .chats .chat-list .list .card .info-container {
+.main .chat-window .chat-list .list .card .info-container {
     display: flex;
     align-items: center;
 }
 
-.main .chats .chat-list .list .card .info-container.reminding::after {
+.main .chat-window .chat-list .list .card .info-container.reminding::after {
     margin-left: 18px;
     /* 重置默认设置 */
     position: static;

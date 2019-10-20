@@ -16,6 +16,6 @@
     color: #b7c0cd;
 }
 
-.main .chats .chat-list .list .card .info-container.reminding::after {
+.main .chat-window .chat-list .list .card .info-container.reminding::after {
     content: "4";
 }

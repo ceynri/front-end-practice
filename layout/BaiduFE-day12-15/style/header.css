@@ -8,7 +8,7 @@
 
 /* 顶栏 */
 
-.main header {
+.main>header {
     position: absolute;
     top: 0;
     right: 0;
@@ -18,7 +18,7 @@
     border-bottom: 1px solid #e3e6ea;
 }
 
-.main header h1 {
+.main>header h1 {
     font-size: 24px;
     font-weight: normal;
     /* 首字母大写 */
@@ -33,7 +33,7 @@
 
 /* 个人信息 */
 
-.main header .profile {
+.main>header .profile {
     position: absolute;
     right: 0;
     top: 0;
@@ -47,12 +47,12 @@
 
 /* 头像 */
 
-.main header .profile .avatar {
+.main>header .profile .avatar {
     float: left;
     margin-right: 20px;
 }
 
-.main header .profile .status {
+.main>header .profile .status {
     position: absolute;
     top: 45px;
     left: 60px;
@@ -63,7 +63,7 @@
 }
 
 /* 利用伪元素画个圆圈 */
-.main header .profile .status::after {
+.main>header .profile .status::after {
     content: "";
     position: absolute;
     top: 3px;
@@ -74,7 +74,7 @@
     border-radius: 50%;
 }
 
-.main header .profile .description {
+.main>header .profile .description {
     display: inline-block;
     /* 居中 */
     position: relative;
@@ -82,19 +82,19 @@
     transform: translateY(-50%);
 }
 
-.main header .profile .description span.name {
+.main>header .profile .description span.name {
     display: block;
     font-size: 16px;
     font-weight: 500;
     color: #2489d4;
 }
 
-.main header .profile>a {
+.main>header .profile>a {
     display: inline-block;
     margin-left: 36px;
 }
 
-.main header .profile .dropdown-button {
+.main>header .profile .dropdown-button {
     display: block;
     width: 11px;
     height: 7px;
