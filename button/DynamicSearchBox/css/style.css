@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #e84118;
+}
+
+.search-box {
+    /* 居中 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* 居中 | 旋转20° */
+    transform: translate(-50%, -50%) rotate(20deg);
+    transition: .4s;
+
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+    /* 原教程使用左右float的方法，经测试在宽度不足时会有bug */
+    /* 使用flex布局简单而效果更佳 */
+    /* 建议float仅用于文字环绕图片的情况下才选择使用 */
+    display: flex;
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    color: #e84118;
+    background: #2f3640;
+    text-decoration: none;
+
+    /* 内联元素的flex居中法 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .4s;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    transition: .4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.search-box:hover {
+    /* 旋转一个小角度的动画效果 */
+    transform: translate(-50%, -50%) rotate(0);
+}
+
+.search-box:hover>.search-txt {
+    /* 搜索条变长 */
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover>.search-btn {
+    background: white;
+}

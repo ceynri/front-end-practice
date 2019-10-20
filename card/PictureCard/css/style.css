@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mircosoft YaHei", consolas;
+}
+
+body {
+    background: #222;
+}
+
+/* absolute + transfrom居中法 */
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image {
+    width: 440px;
+    height: 272px;
+
+    background: url(img/img.jpg) center no-repeat;
+    background-size: cover;
+
+    /* 溢出部分隐藏 */
+    overflow: hidden;
+    /* 鼠标样式变为点击型 */
+    cursor: pointer;
+
+    /* 圆角样式 */
+    border-radius: 8px;
+    /* 底部弥散阴影 */
+    box-shadow: 0 0 40px -16px rgba(255, 255, 255, .4);
+    transition: box-shadow .8s;
+}
+
+.image-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+
+    background: rgba(0, 0, 0, .2);
+    transition: background .8s;
+    /* box-sizing: border-box; */
+}
+
+.image-content h1 {
+    color: #fff;
+    /* 英文全大写 */
+    text-transform: uppercase;
+    /* 下沉20px */
+    transform: translateY(20px);
+    transition: .4s;
+}
+
+.icons {
+    /* 右下角对齐 */
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+.icon {
+    /* 取消a标签默认的下划线样式 */
+    text-decoration: none;
+    color: #eee;
+    /* font-awesome“图标”其实是字符 */
+    font-size: 22px;
+    margin-left: 20px;
+    /* 隐藏到模块外 */
+    transform: translateY(80px);
+}
+
+/* icon按顺序浮起 */
+.icon:nth-child(1) {
+    transition: transform .4s .05s, color .4s;
+}
+
+.icon:nth-child(2) {
+    transition: transform .4s .1s, color .4s;
+}
+
+.icon:nth-child(3) {
+    transition: transform .4s .15s, color .4s;
+}
+
+/* 底部发光变亮 */
+.image:hover {
+    box-shadow: 0 0 80px -8px rgba(255, 255, 255, .4);
+}
+
+/* 暗色蒙版取消 */
+.image:hover .image-content {
+    background: none;
+}
+
+/* translateY由40px变为0px */
+.image:hover .image-content h1 {
+    transform: translateY(0);
+}
+
+/* translateY由80px变为0px */
+.image:hover .image-content .icons .icon {
+    transform: translateY(0);
+}
+
+/* 改变icon颜色 */
+.icon:hover {
+    color: #269ff0;
+}
+
+/* 从底部上升一个三角形区域 */
+.image-content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 0px;
+    /* 裁剪为多边形（梯形） */
+    clip-path: polygon(0 100%, 0 61.8%, 100% 0, 100% 100%);
+    transition: .6s;
+}
+
+.image:hover .image-content::before {
+    height: 50%;
+}
