@@ -10,25 +10,25 @@
 
 ## Layout
 
-- [响应式布局的相册页](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/layout/FlexGallery/flex-gallery.html) [📃](layout/FlexGallery)
+- [响应式布局的相册页](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/layout/FlexGallery/flex-gallery.html) [📃](layout/FlexGallery/)
 
-![flex-gallery.gif](https://i.loli.net/2019/10/19/T2QLblOmnXpKgFh.gif)
+![flex-gallery.gif](https://i.loli.net/2019/10/20/ZdIhac731tEyQYW.gif)
 
 - [百度前端技术学院 - 第十二天到第十五天，复杂页面实现 Demo](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/layout/BaiduFE-day12-15/index.html) [📃](layout/BaiduFE-day12-15/)  [未完成]
 
 ## Card
 
-- [图片3D分层悬浮效果](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/card/SuspendedLayer/suspended-layer.html) [📃](card/SuspendedLayer/suspended-layer.html)
+- [图片3D分层悬浮效果](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/card/SuspendedLayer/suspended-layer.html) [📃](card/SuspendedLayer/)
 
 ![layed-suspension.gif](https://i.loli.net/2019/10/13/DU6VlXijBgbqsyt.gif)
 
-- [带浮动按钮卡片式图片](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/card/PictureCard/picture-card.html) [📃](card/PictureCard/picture-card.html)
+- [带浮动按钮卡片式图片](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/card/PictureCard/picture-card.html) [📃](card/PictureCard/)
 
 ![picture-card.gif](https://i.loli.net/2019/10/19/qBlTefQOL29on1V.gif)
 
 ## Button
 
-- [动态伸缩搜索框](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/button/DynamicSearchBox/dynamic-search-box.html) [📃](button/DynamicSearchBox/dynamic-search-box.html)
+- [动态伸缩搜索框](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/button/DynamicSearchBox/dynamic-search-box.html) [📃](button/DynamicSearchBox/)
 
 ![dynamic-search-box.gif](https://i.loli.net/2019/10/19/ZfNIvq1BOueShAr.gif)
 
