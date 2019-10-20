@@ -4,6 +4,9 @@
     width: 250px;
     height: 100vh;
     padding: 30px;
+    /* 将padding-top交给main-part */
+    /* 使得main-part滚动不会被padding-top遮挡 */
+    padding-top: 0;
     background: #222c3c;
     font-size: 14px;
 
@@ -16,6 +19,8 @@
 }
 
 .secondary .main-part {
+    padding-top: 30px;
+
     overflow: scroll;
     /* IE10/Edge 去除滚动条 */
     -ms-overflow-style: none;
