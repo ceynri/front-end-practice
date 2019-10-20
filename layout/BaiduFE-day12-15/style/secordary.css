@@ -3,16 +3,19 @@
 .secondary {
     width: 250px;
     height: 100vh;
+    padding: 30px;
+    background: #222c3c;
+    font-size: 14px;
 
     position: fixed;
     top: 0;
     left: 100px;
 
-    padding: 30px;
-    background: #222c3c;
+    display: flex;
+    flex-direction: column;
+}
 
-    font-size: 14px;
-
+.secondary .main-part {
     overflow: scroll;
     /* IE10/Edge 去除滚动条 */
     -ms-overflow-style: none;
@@ -20,10 +23,13 @@
     scrollbar-color: transparent transparent;
     /* firefox 64 去除滚动条 */
     scrollbar-width: none;
+
+    /* 空间有剩余则扩张，使底下的按钮仍然在底下 */
+    flex-grow: 1;
 }
 
 /* Chrome 隐藏滚动条 */
-.secondary::-webkit-scrollbar {
+.secondary .main-part::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
@@ -90,19 +96,10 @@
     background-image: url(../imgs/icons/chart.png);
 }
 
-
 /* monthly goals */
 
 .secondary .bottom {
-    /* 使用fixed才可以在浏览器竖向高度不够
-       需要滚动第二菜单栏时不会移动 */
-    position: fixed;
-    bottom: 0;
-    left: 100px;
-
-    /* 占据一定的空间，避免垂直高度不够时上面的菜单挤到下面 */
-    width: 250px;
-    padding: 30px;
+    margin-top: 30px;
 
     font-size: 12px;
     color: #fff;
@@ -112,7 +109,6 @@
 .secondary .bottom .money {
     float: right;
 }
-
 
 .secondary .bottom .bold {
     font-weight: 500;

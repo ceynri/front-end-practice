@@ -9,19 +9,11 @@ nav.menu {
     width: 100px;
     height: 100vh;
 
-    /* 以防当浏览器垂直高度过小 */
-    overflow: scroll;
-    /* IE10/Edge 去除滚动条 */
-    -ms-overflow-style: none;
-    /* firefox 64 隐藏滚动条 */
-    scrollbar-color: transparent transparent;
-    /* firefox 64 去除滚动条 */
-    scrollbar-width: none;
+    /* flex布局要比float好用很多 */
+    display: flex;
+    flex-direction: column;
 }
-.menu::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
+
 /* 左侧栏按钮 */
 
 nav.menu button {
@@ -38,7 +30,23 @@ nav.menu button:hover {
 }
 
 nav.menu .menu-buttons {
+    /* 空间有剩余则扩张，使底下的按钮仍然在底下 */
+    flex-grow: 1;
     padding: 20px;
+    
+    /* 以防当浏览器垂直高度过小 */
+    overflow: scroll;
+    /* IE10/Edge 去除滚动条 */
+    -ms-overflow-style: none;
+    /* firefox 64 隐藏滚动条 */
+    scrollbar-color: transparent transparent;
+    /* firefox 64 去除滚动条 */
+    scrollbar-width: none;
+}
+
+nav.menu .menu-buttons::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 nav.menu .menu-buttons button {
@@ -111,13 +119,11 @@ nav.menu .menu-buttons button.more:after {
 /* 左侧栏底下 */
 
 nav.menu .bottom-menu-buttons {
-    position: fixed;
-    font-size: 0;
     padding: 20px 25px;
-    left: 0;
-    bottom: 0;
+    font-size: 0;
     /* 盖住当浏览器垂直高度过小时，上面的icon挤到下面来的问题 */
     background: #1d2531;
+    flex-shrink: 0;
 }
 
 nav.menu .bottom-menu-buttons .grid {
