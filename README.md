@@ -60,7 +60,7 @@
 
 - [📃](loader/StairsLoader) | [阶梯小球加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/StairsLoader/stairs-loader.html)
 
-![stairs-loader.gif](https://i.loli.net/2019/10/13/MEXaYj7uDpPibsg.gif)
+![stairs-loader.gif](https://i.loli.net/2019/11/12/vkiZcexo9gsSnpO.gif)
 
 - [📃](loader/RainbowLoader) | [彩虹旋转加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/RainbowLoader/rainbow-loader.html)
 
