@@ -34,6 +34,10 @@
 
 ## Button
 
+- [简单的hover效果按钮](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/button/HoverButton/hover-button.html) [📃](button/HoverButton/)
+
+![hover-button.gif](https://i.loli.net/2019/11/12/TjUqz7CQA8SRpgh.gif)
+
 - [动态伸缩搜索框](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/button/DynamicSearchBox/dynamic-search-box.html) [📃](button/DynamicSearchBox/)
 
 ![dynamic-search-box.gif](https://i.loli.net/2019/10/19/ZfNIvq1BOueShAr.gif)
@@ -70,15 +74,16 @@
 
 ## 参考
 
-*注：原示例基本无注释，且可能与本仓库的实现略有出入。*
+*注：原示例基本无注释，且可能与本仓库的实现略有出入。部分网站需要科学上网*
 
 - Layout
   - [响应式布局的相册页](https://www.youtube.com/watch?v=mkqRpPdnggw) @DarkCode
-  - [百度前端技术学院 - 第十二天到第十五天，复杂页面实现](http://ife.baidu.com/course/detail/id/44)
+  - [百度前端技术学院 - 第十二天到第十五天，复杂页面实现](http://ife.baidu.com/course/detail/id/44) @ife
 - Card
   - [图片3D分层悬浮效果](https://www.youtube.com/watch?v=WF68FcI21es) @Online Tutorials
   - [带浮动按钮卡片式图片](https://www.youtube.com/watch?v=b8e6D7oBf4g) @DarkCode
 - Button
+  - [简单的hover效果按钮](https://www.youtube.com/watch?v=MLfAW55_4cY) @DarkCode
   - [动态伸缩搜索框](https://www.youtube.com/watch?v=v1PeTDrw6OY) @DarkCode
   - [扁平化动画加载按钮](https://www.bilibili.com/video/av58709312) @前端实验室
 - Loader
