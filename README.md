@@ -1,13 +1,13 @@
-# 一些 CSS 效果的小练习
+# 前端动效小练习
 
 慢慢写
 
-代码做了详细的注释，**点击`📃`直接阅读源码，点击`标题`预览效果**。
+代码做了详细的面向新手的注释，**点击`📃`直接阅读源码，点击`标题`预览效果**。
 
 注：
 
 - 目前大部分样例都是纯 HTML + CSS，少部分样例会添加简单的 JS 代码。
-- 预览效果是借助在 github 项目 html 代码地址前面添加`htmlpreview.github.io/?`所实现的，故响应速度可能稍慢。
+- 预览效果目前是借助在 github 项目 html 代码地址前面添加`htmlpreview.github.io/?`所实现的，故响应速度可能稍慢。
 - 由于gif图色彩数限制，渐变效果在Gif图上表现较差，以实际样例为准。
 
 <br/>
@@ -18,7 +18,7 @@
 
 ![flex-gallery.gif](https://i.loli.net/2019/10/20/ZdIhac731tEyQYW.gif)
 
-- [📃](layout/BaiduFE-day12-15/) | [百度前端技术学院 - 第十二天到第十五天，复杂页面实现 Demo](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/layout/BaiduFE-day12-15/index.html)
+- [📃](layout/IFE-day12-15/) | [百度前端技术学院 - 第十二天到第十五天，复杂页面实现 Demo](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/layout/IFE-day12-15/index.html)
 
 ![ife-demo.gif](https://i.loli.net/2019/11/12/JkjLevPYAErUNMO.gif)
 
