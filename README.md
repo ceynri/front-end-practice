@@ -7,30 +7,30 @@
 注：
 
 - 目前大部分样例都是纯 HTML + CSS，少部分样例会添加简单的 JS 代码。
-- 预览效果目前是借助在 github 项目 html 代码地址前面添加`htmlpreview.github.io/?`所实现的，故响应速度可能稍慢。
+- 在线预览效果目前已搬运至个人服务器上，保障了国内访问速度。
 - 由于gif图色彩数限制，渐变效果在Gif图上表现较差，以实际样例为准。
 
 <br/>
 
 ## Layout
 
-- [📃](layout/FlexGallery/) | [响应式布局的相册页](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/layout/FlexGallery/flex-gallery.html)
-
-![flex-gallery.gif](https://i.loli.net/2019/10/20/ZdIhac731tEyQYW.gif)
-
-- [📃](layout/IFE-day12-15/) | [百度前端技术学院 - 第十二天到第十五天，复杂页面实现 Demo](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/layout/IFE-day12-15/index.html)
+- [📃](layout/IFE-day12-15/) | [百度前端技术学院 - 第十二天到第十五天，复杂页面实现 Demo](https://ceynri.cn/demo/layout/IFE-day12-15/index.html)
 
 ![ife-demo.gif](https://i.loli.net/2019/11/12/JkjLevPYAErUNMO.gif)
+
+- [📃](layout/FlexGallery/) | [响应式布局的相册页](https://ceynri.cn/demo/layout/FlexGallery/flex-gallery.html)
+
+![flex-gallery.gif](https://i.loli.net/2019/10/20/ZdIhac731tEyQYW.gif)
 
 <br/>
 
 ## Card
 
-- [📃](card/SuspendedLayer/) | [图片3D分层悬浮效果](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/card/SuspendedLayer/suspended-layer.html)
+- [📃](card/SuspendedLayer/) | [图片3D分层悬浮效果](https://ceynri.cn/demo/card/SuspendedLayer/suspended-layer.html)
 
 ![layed-suspension.gif](https://i.loli.net/2019/10/13/DU6VlXijBgbqsyt.gif)
 
-- [📃](card/PictureCard/) | [带浮动按钮卡片式图片](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/card/PictureCard/picture-card.html)
+- [📃](card/PictureCard/) | [带浮动按钮卡片式图片](https://ceynri.cn/demo/card/PictureCard/picture-card.html)
 
 ![picture-card.gif](https://i.loli.net/2019/10/19/qBlTefQOL29on1V.gif)
 
@@ -38,15 +38,15 @@
 
 ## Button
 
-- [📃](button/HoverButton/) | [简单的hover效果按钮](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/button/HoverButton/hover-button.html)
+- [📃](button/HoverButton/) | [简单的hover效果按钮](https://ceynri.cn/demo/button/HoverButton/hover-button.html)
 
 ![hover-button.gif](https://i.loli.net/2019/11/12/TjUqz7CQA8SRpgh.gif)
 
-- [📃](button/DynamicSearchBox/) | [动态伸缩搜索框](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/button/DynamicSearchBox/dynamic-search-box.html)
+- [📃](button/DynamicSearchBox/) | [动态伸缩搜索框](https://ceynri.cn/demo/button/DynamicSearchBox/dynamic-search-box.html)
 
 ![dynamic-search-box.gif](https://i.loli.net/2019/10/19/ZfNIvq1BOueShAr.gif)
 
-- [📃](button/FlatLoginButton/) | [扁平化动画加载按钮](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/button/FlatLoginButton/flat-login-button.html)
+- [📃](button/FlatLoginButton/) | [扁平化动画加载按钮](https://ceynri.cn/demo/button/FlatLoginButton/flat-login-button.html)
 
 ![Flat-login-button.gif](https://i.loli.net/2019/10/20/oPTvAXkMOD41QwV.gif)
 
@@ -54,23 +54,23 @@
 
 ## Loader
 
-- [📃](loader/BubblesLoader) | [浮动气泡加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/BubblesLoader/bubbles-loader.html)
+- [📃](loader/BubblesLoader) | [浮动气泡加载动画](https://ceynri.cn/demo/loader/BubblesLoader/bubbles-loader.html)
 
 ![bubbles-loader.gif](https://i.loli.net/2019/10/13/Ezmo5FNUhQeVR7I.gif)
 
-- [📃](loader/StairsLoader) | [阶梯小球加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/StairsLoader/stairs-loader.html)
+- [📃](loader/StairsLoader) | [阶梯小球加载动画](https://ceynri.cn/demo/loader/StairsLoader/stairs-loader.html)
 
 ![stairs-loader.gif](https://i.loli.net/2019/11/12/vkiZcexo9gsSnpO.gif)
 
-- [📃](loader/RainbowLoader) | [彩虹旋转加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/RainbowLoader/rainbow-loader.html)
+- [📃](loader/RainbowLoader) | [彩虹旋转加载动画](https://ceynri.cn/demo/loader/RainbowLoader/rainbow-loader.html)
 
 ![rainbow-loader.gif](https://i.loli.net/2019/10/13/Yo4xgtRiUBjQNIK.gif)
 
-- [📃](loader/FlyingManLoader) | [飞行小人加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/FlyingManLoader/flying-man-loader.html)
+- [📃](loader/FlyingManLoader) | [飞行小人加载动画](https://ceynri.cn/demo/loader/FlyingManLoader/flying-man-loader.html)
 
 ![flying-man-loader.gif](https://i.loli.net/2019/10/13/CFUw3xBz7vtiRJD.gif)
 
-- [📃](loader/CodeLoader) | [{...} 加载动画](http://htmlpreview.github.io/?https://github.com/ceynri/front-end-practice/blob/master/loader/CodeLoader/code-loader.html)
+- [📃](loader/CodeLoader) | [{...} 加载动画](https://ceynri.cn/demo/loader/CodeLoader/code-loader.html)
 
 ![code-loader.gif](https://i.loli.net/2019/10/13/fYPXKIgv1mF4srD.gif)
 
