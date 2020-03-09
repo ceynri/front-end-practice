@@ -1,0 +1,82 @@
+body {
+    position: relative;
+    width: 100%;
+    /* 上边距60px 其他自动 */
+    margin: 60px auto;
+    background: url(../src/back_ground.jpg);
+    /* 使元素水平居中 */
+    text-align: center;
+}
+
+
+.title {
+    font-family: "微软雅黑", "黑体", "Microsoft YaHei";
+    position: relative;
+}
+
+/* 列后清除浮动 */
+.clear_fix {
+    clear: both;
+}
+
+h1 {
+    color: #26a;
+    margin: 60px 0;
+}
+
+.slash {
+    font-size: 1.25em;
+}
+
+.map {
+    padding: 5px;
+    background: #f0f0f0;
+    border: 1px black solid;
+}
+
+.x_axis line {
+    fill: none;
+    stroke: #000;
+}
+
+.y_axis line {
+    display: none;
+}
+
+.circle {
+    opacity: 0.75;
+}
+
+.unselected {
+    stroke: gray;
+    stroke-width: 1;
+}
+
+.selected {
+    stroke: #333;
+    stroke-width: 4;
+}
+
+.rect.selected {
+    stroke-width: 2;
+}
+
+.rect.unselected {
+    stroke: gray;
+    stroke-width: 0;
+}
+
+.over {
+    stroke: #333;
+}
+
+.intro {
+    margin: 60px 0;
+    font-size: 14px;
+    color: #26a;
+}
+
+footer div {
+    font-size: 14px;
+    color: gray;
+}

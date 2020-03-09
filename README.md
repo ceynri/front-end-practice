@@ -76,6 +76,14 @@
 
 <br/>
 
+## Data Visualization
+
+- [📃](visualization/course-assignment) | [我的数据可视化课程大作业](https://ceynri.cn/demo/visualization/course-assignment/visualization.html) （代码较为久远，仅供参考）
+
+![visualization.gif](https://i.loli.net/2020/03/09/wx3a8jJ2guKR9NI.gif)
+
+<br/>
+
 ## 参考
 
 *注：原示例基本无注释，且可能与本仓库的实现略有出入。部分网站需要科学上网*
